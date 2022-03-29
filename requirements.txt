@@ -1,6 +1,5 @@
 argcomplete==2.0.0
 asgiref==3.5.0
-boto3==1.21.18
 botocore==1.24.18
 certifi==2021.10.8
 cffi==1.15.0
@@ -30,6 +29,7 @@ placebo==0.9.0
 pycparser==2.21
 PyJWT==2.3.0
 python-dateutil==2.8.2
+python-decouple==3.6
 python-slugify==6.1.1
 python3-openid==3.2.0
 PyYAML==6.0
@@ -48,4 +48,3 @@ urllib3==1.26.8
 Werkzeug==2.0.3
 wsgi-request-logger==0.4.6
 yarg==0.1.9
-zappa==0.54.1
