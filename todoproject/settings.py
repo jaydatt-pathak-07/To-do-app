@@ -22,14 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'msb-0s4&&ebf&ajzn^e=4!6#p!mh^!uz7=cv%qf1smnaoe7l$g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = []
 
-DISABLE_COLLECTSTATIC=1
+DISABLE_COLLECTSTATIC = 1
 
 from django.contrib.messages import constants as messages 
 # Application definition
