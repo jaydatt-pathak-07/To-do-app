@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% block title %}Edit Data{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-6" style="margin: 0 auto;">
+      <form action="/update/{{id}}">
+        <div class="form-group">
+          <label for="title">Todo Title</label>
+          {% comment %} <input type="text" class="form-control" id="title" name="title" value={{ title }}> {% endcomment %}
+          <textarea class="form-control" id="title" name="title" rows="1">{{title}}</textarea>
+        </div>
+        <div class="form-group">
+          <label for="description">Todo Description</label>
+          <textarea class="form-control" id="description" name="description" rows="3">{{description}}</textarea>
+        </div>
+        <div class="form-group">
+          <label for="priority">Todo Priority</label>
+          <input type="number" class="form-control" id="priority" name="priority" value={{priority}}>
+          {% for message in messages %}
+            <label>{{ message }}</lable>
+          {% endfor %}
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin: 0 auto;display: block;">Update</button>
+      </form>
+      </div>
+      </div>
+{% endblock %}
