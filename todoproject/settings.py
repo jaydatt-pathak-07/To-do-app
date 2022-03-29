@@ -29,6 +29,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
+DISABLE_COLLECTSTATIC=1
+
 from django.contrib.messages import constants as messages 
 # Application definition
 
